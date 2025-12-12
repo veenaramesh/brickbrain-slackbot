@@ -1,0 +1,12 @@
+resources:
+  apps:
+    brickbrain_slackbot:
+      name: brickbrain-app-${bundle.target}
+      description: "Slackbot Databricks App - ${bundle.target} environment"
+      # Local path within the bundle (copied to workspace on bundle deploy)
+      # Environment variables are configured in app.yaml within source_code_path
+      source_code_path: ../app
+      # Optional: Add permissions if needed
+      # permissions:
+      #   - level: CAN_USE
+      #     group_name: users
