@@ -1,0 +1,11 @@
+command:
+- python
+- app.py
+
+env: 
+  - name: ENDPOINT_NAME
+    valueFrom: ${endpoint_name}
+  - name: EXPERIMENT_PATH
+    valueFrom: ${experiment_path}
+  - name: EXPERIMENT_ID
+    valueFrom: ${experiment_id}
